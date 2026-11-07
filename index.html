@@ -375,7 +375,75 @@ main.page .content>.aura-brand-credit{margin:10px auto 0}
 .hero.cover-theme .scroll-note{opacity:0!important;visibility:hidden;transition:opacity .5s ease}
 .hero.cover-theme.nahomi-intro-done .scroll-note{opacity:.68!important;visibility:visible}
 @media(prefers-reduced-motion:reduce){.hero.cover-theme .nahomi-intro-video{transition:none!important}}
-</style><link rel="preload" as="image" href="assets/bola-disco-inicio.jpg"></head><body class="theme-monochrome event-boda design-graduacion"><div class="invitation-background" aria-hidden="true"><img src="assets/fondo.png?v=mw5mn3wy" alt="" decoding="async"><div class="background-veil"></div></div><header class="hero cover-theme" data-order="classic" data-offset="0"><div class="hero-media"></div><video class="nahomi-intro-video" aria-hidden="true" autoplay muted playsinline webkit-playsinline preload="auto" poster="assets/bola-disco-inicio.jpg"><source src="assets/nahomi-intro.mp4" type="video/mp4"></video><div class="hero-overlay"></div><div class="hero-inner"></div><div class="scroll-note">Desliza para descubrir</div></header><main class="page"><div class="content"><section class="section center reveal date-section"><div class="section-label">Save the date</div><h2 data-edit="countdownLabel">Falta para mi evento</h2><div class="date-card date-couture"><div class="date-weekday">SÁBADO</div><div class="date-main"><span class="date-month">NOVIEMBRE</span><strong class="date-day">28</strong><span class="date-year">2026</span></div><div class="date-time">07:00 P.M.</div></div><div class="countdown countdown-editorial" data-date="2026-11-28T19:00"><div class="count-item"><b data-d>00</b><span>Días</span></div><div class="count-item"><b data-h>00</b><span>Horas</span></div><div class="count-item"><b data-m>00</b><span>Min</span></div><div class="count-item"><b data-s>00</b><span>Seg</span></div></div></section><section id="ubicacion" class="section reveal"><div class="section-label">Dónde será</div><h2 data-edit="locationsHeadingSize">Nos vemos aquí.</h2><div class="ornament"></div><div class="locations"><div class="location-card map-mode-toggle"><div class="location-head"><div><small data-edit="receptionText">Recepción</small><strong data-edit="receptionText">Historico Premium Club 7:00pm</strong></div><button class="map-toggle" type="button" aria-expanded="false" aria-controls="map-reception"><span>Ver mapa</span><span class="map-toggle-icon">＋</span></button><div class="map-disclosure" id="map-reception"><div class="map-disclosure-inner"><div class="map-preview"><iframe data-src="https://www.google.com/maps?q=19.4196262%2C-102.0613708&amp;hl=es&amp;t=m&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen title="Mapa de Historico Premium Club 7:00pm"></iframe></div><a class="map-external" href="https://maps.app.goo.gl/w8dHvmhph3uNJdvz9" target="_blank" rel="noopener">Abrir en Google Maps ↗</a></div></div></div></div></div></section><section id="confirmar" class="section center rsvp reveal"><div class="section-label">RSVP</div><h2>¿Nos acompañas?</h2><p class="section-copy">Tu confirmación nos ayuda a preparar cada detalle.</p><a class="cta" target="_blank" href="https://wa.me/524523378563?text=Hola%2C%20quiero%20confirmar%20mi%20asistencia.">Confirmar por WhatsApp →</a></section><section class="section reveal"><div class="section-label center">Lluvia de sobres</div><div class="final-message" data-edit="mainMessage">Tu presencia es mi mejor regalo. Si deseas tener un detalle conmigo, habrá lluvia de sobres durante la celebración. Gracias por ser parte de este día tan especial.</div></section><footer class="aura-brand-credit" data-aura-brand-credit="default-v1" aria-label="Créditos de diseño"><a href="https://auradigitaljal.com/" target="_blank" rel="noopener noreferrer" aria-label="Creado por Aura Digital. Conoce nuestras invitaciones"><span class="aura-brand-credit-kicker">Creado por</span><strong>AURA DIGITAL</strong><span class="aura-brand-credit-link">Conoce nuestras invitaciones</span></a></footer></div></main><script>(function invitationRuntime(){
+
+/* Nahomi · tarjeta de lluvia de sobres · estilo silver couture */
+.content>.aura-envelope-card{
+  padding:11px!important;
+  margin-top:18px;
+  border:1px solid rgba(219,221,225,.29)!important;
+  border-radius:2px!important;
+  background:linear-gradient(158deg,rgba(47,47,50,.88),rgba(12,12,14,.91) 58%,rgba(40,40,43,.86))!important;
+  box-shadow:0 22px 65px rgba(0,0,0,.35),inset 0 0 0 1px rgba(255,255,255,.045)!important;
+}
+.aura-envelope-card .aura-envelope-frame{
+  border:1px solid rgba(228,228,233,.22);
+  padding:34px clamp(20px,5vw,52px) 31px;
+  text-align:center;
+  position:relative;
+  background:radial-gradient(ellipse at 50% 6%,rgba(210,213,220,.09),transparent 55%);
+}
+.aura-envelope-card .aura-envelope-frame::before,
+.aura-envelope-card .aura-envelope-frame::after{
+  content:"";position:absolute;width:15px;height:15px;
+  border-color:rgba(218,221,226,.55);border-style:solid;
+}
+.aura-envelope-card .aura-envelope-frame::before{top:8px;left:8px;border-width:1px 0 0 1px}
+.aura-envelope-card .aura-envelope-frame::after{bottom:8px;right:8px;border-width:0 1px 1px 0}
+.aura-envelope-card .aura-envelope-top{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:19px;color:#d3d5dc}
+.aura-envelope-card .aura-envelope-hairline{height:1px;width:54px;background:linear-gradient(90deg,transparent,rgba(220,221,227,.55),transparent)}
+.aura-envelope-card .aura-envelope-spark{filter:drop-shadow(0 0 4px rgba(230,233,243,.3))}
+.aura-envelope-card .aura-envelope-seal{
+  width:94px;height:78px;margin:0 auto 16px;
+  display:grid;place-items:center;
+  color:#e0e1e5;
+  filter:drop-shadow(0 0 6px rgba(219,223,232,.17));
+}
+.aura-envelope-card .aura-envelope-kicker{
+  color:#b6b7be!important;
+  font:500 9px/1.5 'DM Sans',sans-serif!important;
+  letter-spacing:.28em!important;
+  text-transform:uppercase!important;
+  margin:0 0 10px!important;
+}
+.aura-envelope-card .aura-envelope-title{
+  font:400 clamp(27px,7vw,39px)/1.12 'Italiana',serif!important;
+  letter-spacing:.015em!important;
+  text-align:center!important;
+  color:#f1f0f2!important;
+  margin:0 auto 18px!important;
+}
+.aura-envelope-card .aura-envelope-ornament{display:flex;align-items:center;justify-content:center;gap:14px;color:#bec0c8;margin:0 auto 19px}
+.aura-envelope-card .aura-envelope-ornament i{width:42px;height:1px;background:linear-gradient(90deg,transparent,rgba(217,217,224,.53))}
+.aura-envelope-card .aura-envelope-ornament i:last-child{transform:rotate(180deg)}
+.aura-envelope-card .aura-envelope-ornament span{font-size:13px;line-height:1}
+.aura-envelope-card .final-message.aura-envelope-message{
+  font:400 clamp(14px,3.7vw,16px)/1.85 'DM Sans',sans-serif!important;
+  color:#d9d9de!important;
+  letter-spacing:.008em!important;
+  text-align:center!important;
+  max-width:425px!important;
+  margin:0 auto!important;
+  overflow-wrap:normal!important;
+}
+.aura-envelope-card .aura-envelope-footer{font-size:11px;letter-spacing:.28em;color:rgba(220,221,226,.5);margin-top:20px}
+@media(max-width:480px){
+  .content>.aura-envelope-card{padding:7px!important}
+  .aura-envelope-card .aura-envelope-frame{padding:27px 18px 25px}
+  .aura-envelope-card .aura-envelope-title{font-size:30px!important}
+  .aura-envelope-card .final-message.aura-envelope-message{font-size:14px!important;line-height:1.8!important}
+  .aura-envelope-card .aura-envelope-seal{margin-bottom:11px}
+}
+</style><link rel="preload" as="image" href="assets/bola-disco-inicio.jpg"></head><body class="theme-monochrome event-boda design-graduacion"><div class="invitation-background" aria-hidden="true"><img src="assets/fondo.png?v=mw5mn3wy" alt="" decoding="async"><div class="background-veil"></div></div><header class="hero cover-theme" data-order="classic" data-offset="0"><div class="hero-media"></div><video class="nahomi-intro-video" aria-hidden="true" autoplay muted playsinline webkit-playsinline preload="auto" poster="assets/bola-disco-inicio.jpg"><source src="assets/nahomi-intro.mp4" type="video/mp4"></video><div class="hero-overlay"></div><div class="hero-inner"></div><div class="scroll-note">Desliza para descubrir</div></header><main class="page"><div class="content"><section class="section center reveal date-section"><div class="section-label">Save the date</div><h2 data-edit="countdownLabel">Falta para mi evento</h2><div class="date-card date-couture"><div class="date-weekday">SÁBADO</div><div class="date-main"><span class="date-month">NOVIEMBRE</span><strong class="date-day">28</strong><span class="date-year">2026</span></div><div class="date-time">07:00 P.M.</div></div><div class="countdown countdown-editorial" data-date="2026-11-28T19:00"><div class="count-item"><b data-d>00</b><span>Días</span></div><div class="count-item"><b data-h>00</b><span>Horas</span></div><div class="count-item"><b data-m>00</b><span>Min</span></div><div class="count-item"><b data-s>00</b><span>Seg</span></div></div></section><section id="ubicacion" class="section reveal"><div class="section-label">Dónde será</div><h2 data-edit="locationsHeadingSize">Nos vemos aquí.</h2><div class="ornament"></div><div class="locations"><div class="location-card map-mode-toggle"><div class="location-head"><div><small data-edit="receptionText">Recepción</small><strong data-edit="receptionText">Historico Premium Club 7:00pm</strong></div><button class="map-toggle" type="button" aria-expanded="false" aria-controls="map-reception"><span>Ver mapa</span><span class="map-toggle-icon">＋</span></button><div class="map-disclosure" id="map-reception"><div class="map-disclosure-inner"><div class="map-preview"><iframe data-src="https://www.google.com/maps?q=19.4196262%2C-102.0613708&amp;hl=es&amp;t=m&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen title="Mapa de Historico Premium Club 7:00pm"></iframe></div><a class="map-external" href="https://maps.app.goo.gl/w8dHvmhph3uNJdvz9" target="_blank" rel="noopener">Abrir en Google Maps ↗</a></div></div></div></div></div></section><section id="confirmar" class="section center rsvp reveal"><div class="section-label">RSVP</div><h2>¿Nos acompañas?</h2><p class="section-copy">Tu confirmación nos ayuda a preparar cada detalle.</p><a class="cta" target="_blank" href="https://wa.me/524523378563?text=Hola%2C%20quiero%20confirmar%20mi%20asistencia.">Confirmar por WhatsApp →</a></section><section id="cierre" class="section reveal aura-envelope-card" aria-labelledby="aura-envelope-title"><div class="aura-envelope-frame"><div class="aura-envelope-top"><span class="aura-envelope-hairline"></span><svg class="aura-envelope-spark" aria-hidden="true" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1.5c.6 4.4 2.1 6.9 7.5 7.5-5.4.6-6.9 3.1-7.5 7.5C8.4 12.1 6.9 9.6 1.5 9 6.9 8.4 8.4 5.9 9 1.5Z" stroke="currentColor" stroke-width=".8"/></svg><span class="aura-envelope-hairline"></span></div><div class="aura-envelope-seal" aria-hidden="true"><svg viewBox="0 0 88 72" width="88" height="72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 15.5h52a6 6 0 0 1 6 6v33a6 6 0 0 1-6 6H18a6 6 0 0 1-6-6v-33a6 6 0 0 1 6-6Z" stroke="currentColor" stroke-width="1.35"/><path d="m13 20 31 24 31-24M13 56l23-18M75 56 52 38" stroke="currentColor" stroke-width="1.15" stroke-linejoin="round"/><path d="M44 6v4M37 9l-2.5-2.5M51 9l2.5-2.5" stroke="currentColor" stroke-width=".9" stroke-linecap="round"/></svg></div><div class="section-label center aura-envelope-kicker">Un detalle especial</div><h2 id="aura-envelope-title" class="aura-envelope-title">Lluvia de sobres</h2><div class="aura-envelope-ornament" aria-hidden="true"><i></i><span>✦</span><i></i></div><p class="final-message aura-envelope-message" data-edit="mainMessage">Tu presencia es mi mejor regalo. Si deseas obsequiarme un detalle, agradeceré tu lluvia de sobres en este día tan especial.</p><div class="aura-envelope-footer" aria-hidden="true">✧ &nbsp; ✧ &nbsp; ✧</div></div></section><footer class="aura-brand-credit" data-aura-brand-credit="default-v1" aria-label="Créditos de diseño"><a href="https://auradigitaljal.com/" target="_blank" rel="noopener noreferrer" aria-label="Creado por Aura Digital. Conoce nuestras invitaciones"><span class="aura-brand-credit-kicker">Creado por</span><strong>AURA DIGITAL</strong><span class="aura-brand-credit-link">Conoce nuestras invitaciones</span></a></footer></div></main><script>(function invitationRuntime(){
  const ready=()=>{
   const reduced=window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
   const hero=document.querySelector('.hero'),heroInner=document.querySelector('.hero-inner');
