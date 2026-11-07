@@ -443,7 +443,125 @@ main.page .content>.aura-brand-credit{margin:10px auto 0}
   .aura-envelope-card .final-message.aura-envelope-message{font-size:14px!important;line-height:1.8!important}
   .aura-envelope-card .aura-envelope-seal{margin-bottom:11px}
 }
-</style><link rel="preload" as="image" href="assets/bola-disco-inicio.jpg"></head><body class="theme-monochrome event-boda design-graduacion"><div class="invitation-background" aria-hidden="true"><img src="assets/fondo.png?v=mw5mn3wy" alt="" decoding="async"><div class="background-veil"></div></div><header class="hero cover-theme" data-order="classic" data-offset="0"><div class="hero-media"></div><video class="nahomi-intro-video" aria-hidden="true" autoplay muted playsinline webkit-playsinline preload="auto" poster="assets/bola-disco-inicio.jpg"><source src="assets/nahomi-intro.mp4" type="video/mp4"></video><div class="hero-overlay"></div><div class="hero-inner"></div><div class="scroll-note">Desliza para descubrir</div></header><main class="page"><div class="content"><section class="section center reveal date-section"><div class="section-label">Save the date</div><h2 data-edit="countdownLabel">Falta para mi evento</h2><div class="date-card date-couture"><div class="date-weekday">SÁBADO</div><div class="date-main"><span class="date-month">NOVIEMBRE</span><strong class="date-day">28</strong><span class="date-year">2026</span></div><div class="date-time">07:00 P.M.</div></div><div class="countdown countdown-editorial" data-date="2026-11-28T19:00"><div class="count-item"><b data-d>00</b><span>Días</span></div><div class="count-item"><b data-h>00</b><span>Horas</span></div><div class="count-item"><b data-m>00</b><span>Min</span></div><div class="count-item"><b data-s>00</b><span>Seg</span></div></div></section><section id="ubicacion" class="section reveal"><div class="section-label">Dónde será</div><h2 data-edit="locationsHeadingSize">Nos vemos aquí.</h2><div class="ornament"></div><div class="locations"><div class="location-card map-mode-toggle"><div class="location-head"><div><small data-edit="receptionText">Recepción</small><strong data-edit="receptionText">Historico Premium Club 7:00pm</strong></div><button class="map-toggle" type="button" aria-expanded="false" aria-controls="map-reception"><span>Ver mapa</span><span class="map-toggle-icon">＋</span></button><div class="map-disclosure" id="map-reception"><div class="map-disclosure-inner"><div class="map-preview"><iframe data-src="https://www.google.com/maps?q=19.4196262%2C-102.0613708&amp;hl=es&amp;t=m&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen title="Mapa de Historico Premium Club 7:00pm"></iframe></div><a class="map-external" href="https://maps.app.goo.gl/w8dHvmhph3uNJdvz9" target="_blank" rel="noopener">Abrir en Google Maps ↗</a></div></div></div></div></div></section><section id="confirmar" class="section center rsvp reveal"><div class="section-label">RSVP</div><h2>¿Nos acompañas?</h2><p class="section-copy">Tu confirmación nos ayuda a preparar cada detalle.</p><a class="cta" target="_blank" href="https://wa.me/524523378563?text=Hola%2C%20quiero%20confirmar%20mi%20asistencia.">Confirmar por WhatsApp →</a></section><section id="cierre" class="section reveal aura-envelope-card" aria-labelledby="aura-envelope-title"><div class="aura-envelope-frame"><div class="aura-envelope-top"><span class="aura-envelope-hairline"></span><svg class="aura-envelope-spark" aria-hidden="true" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1.5c.6 4.4 2.1 6.9 7.5 7.5-5.4.6-6.9 3.1-7.5 7.5C8.4 12.1 6.9 9.6 1.5 9 6.9 8.4 8.4 5.9 9 1.5Z" stroke="currentColor" stroke-width=".8"/></svg><span class="aura-envelope-hairline"></span></div><div class="aura-envelope-seal" aria-hidden="true"><svg viewBox="0 0 88 72" width="88" height="72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 15.5h52a6 6 0 0 1 6 6v33a6 6 0 0 1-6 6H18a6 6 0 0 1-6-6v-33a6 6 0 0 1 6-6Z" stroke="currentColor" stroke-width="1.35"/><path d="m13 20 31 24 31-24M13 56l23-18M75 56 52 38" stroke="currentColor" stroke-width="1.15" stroke-linejoin="round"/><path d="M44 6v4M37 9l-2.5-2.5M51 9l2.5-2.5" stroke="currentColor" stroke-width=".9" stroke-linecap="round"/></svg></div><div class="section-label center aura-envelope-kicker">Un detalle especial</div><h2 id="aura-envelope-title" class="aura-envelope-title">Lluvia de sobres</h2><div class="aura-envelope-ornament" aria-hidden="true"><i></i><span>✦</span><i></i></div><p class="final-message aura-envelope-message" data-edit="mainMessage">Tu presencia es mi mejor regalo. Si deseas obsequiarme un detalle, agradeceré tu lluvia de sobres en este día tan especial.</p><div class="aura-envelope-footer" aria-hidden="true">✧ &nbsp; ✧ &nbsp; ✧</div></div></section><footer class="aura-brand-credit" data-aura-brand-credit="default-v1" aria-label="Créditos de diseño"><a href="https://auradigitaljal.com/" target="_blank" rel="noopener noreferrer" aria-label="Creado por Aura Digital. Conoce nuestras invitaciones"><span class="aura-brand-credit-kicker">Creado por</span><strong>AURA DIGITAL</strong><span class="aura-brand-credit-link">Conoce nuestras invitaciones</span></a></footer></div></main><script>(function invitationRuntime(){
+
+/* Nahomi XV · SILVER COUTURE · unificación de tarjetas de fecha, ubicación y confirmación.
+   La tarjeta de sobres mantiene su diseño y no se modifica. */
+.content > .section.aura-silver-unified{
+  position:relative!important;
+  overflow:hidden!important;
+  padding:42px clamp(25px,6vw,58px) 38px!important;
+  margin:0 0 24px!important;
+  background:linear-gradient(158deg,rgba(47,47,50,.88),rgba(12,12,14,.91) 58%,rgba(40,40,43,.86))!important;
+  border:1px solid rgba(219,221,225,.29)!important;
+  border-radius:2px!important;
+  box-shadow:0 22px 65px rgba(0,0,0,.35),inset 0 0 0 1px rgba(255,255,255,.045)!important;
+  color:#e7e7ea!important;
+  text-align:center!important;
+}
+.content > .section.aura-silver-unified::before{
+  content:""!important;
+  position:absolute!important;
+  inset:10px!important;
+  border:1px solid rgba(228,228,233,.22)!important;
+  background:radial-gradient(ellipse at 50% 0%,rgba(210,213,220,.07),transparent 55%);
+  pointer-events:none!important;
+  z-index:0!important;
+  opacity:1!important;
+}
+.content > .section.aura-silver-unified::after{display:none!important}
+.content > .section.aura-silver-unified > * {position:relative;z-index:1}
+.aura-silver-unified .aura-silver-top{display:flex;align-items:center;justify-content:center;gap:16px;color:#d3d5dc;margin:0 auto 18px}
+.aura-silver-unified .aura-silver-top i{display:block;height:1px;width:54px;background:linear-gradient(90deg,transparent,rgba(220,221,227,.55),transparent)}
+.aura-silver-unified .aura-silver-top span{font-size:17px;line-height:1;filter:drop-shadow(0 0 4px rgba(230,233,243,.3))}
+.aura-silver-unified .aura-silver-symbol{display:flex;align-items:center;justify-content:center;max-width:92px;height:78px;margin:0 auto 14px;color:#e0e1e5;filter:drop-shadow(0 0 6px rgba(219,223,232,.17))}
+.aura-silver-unified .aura-silver-symbol svg{max-width:100%;max-height:100%}
+.aura-silver-unified > .section-label{color:#b6b7be!important;font:500 9px/1.5 'DM Sans',sans-serif!important;letter-spacing:.28em!important;text-transform:uppercase!important;margin:0 auto 10px!important;text-align:center!important}
+.aura-silver-unified > h2{color:#f1f0f2!important;font:400 clamp(27px,7vw,39px)/1.12 'Italiana',serif!important;letter-spacing:.015em!important;text-align:center!important;margin:0 auto 18px!important;max-width:510px!important}
+.aura-silver-unified .aura-silver-divider{display:flex;align-items:center;justify-content:center;gap:14px;color:#bec0c8;margin:0 auto 23px}
+.aura-silver-unified .aura-silver-divider i{display:block;width:42px;height:1px;background:linear-gradient(90deg,transparent,rgba(217,217,224,.53))}
+.aura-silver-unified .aura-silver-divider i:last-child{transform:rotate(180deg)}
+.aura-silver-unified .aura-silver-divider span{font-size:13px;line-height:1}
+.aura-silver-unified .date-card.date-couture{
+  width:min(100%,340px)!important;
+  margin:6px auto 19px!important;
+  padding:22px 14px!important;
+  background:linear-gradient(155deg,rgba(75,76,79,.15),rgba(18,18,20,.42))!important;
+  border:1px solid rgba(220,221,228,.32)!important;
+  border-radius:1px!important;
+  outline:0!important;
+  box-shadow:inset 0 0 0 5px rgba(225,226,230,.04)!important;
+  color:#e6e6eb!important;
+}
+.aura-silver-unified .date-day{font:400 clamp(52px,13vw,68px)/.9 'Italiana',serif!important;color:#f5f3f5!important}
+.aura-silver-unified .date-weekday,
+.aura-silver-unified .date-time,
+.aura-silver-unified .date-month,
+.aura-silver-unified .date-year{color:#c7c8cf!important;font:500 10px/1.5 'DM Sans',sans-serif!important;letter-spacing:.15em!important}
+.aura-silver-unified .countdown{margin:18px auto 0!important;width:min(100%,360px);gap:0!important;border-top:1px solid rgba(221,222,227,.21)!important;border-bottom:1px solid rgba(221,222,227,.21)!important;padding:6px 0!important}
+.aura-silver-unified .countdown .count-item{background:transparent!important;padding:12px 2px!important;min-width:0!important}
+.aura-silver-unified .countdown .count-item + .count-item{border-left:1px solid rgba(221,222,227,.13)!important}
+.aura-silver-unified .countdown .count-item b{font:400 clamp(21px,6vw,30px)/1 'Italiana',serif!important;color:#e8e8eb!important}
+.aura-silver-unified .countdown .count-item span{color:#b6b7c0!important;letter-spacing:.11em!important}
+.aura-silver-unified .locations{gap:14px!important}
+.aura-silver-unified .location-card{
+  border:1px solid rgba(220,221,228,.3)!important;
+  background:linear-gradient(145deg,rgba(82,82,88,.14),rgba(10,10,12,.2))!important;
+  border-radius:1px!important;
+  padding:clamp(14px,3.5vw,22px)!important;
+  color:#e7e7ed!important;
+  text-align:left!important;
+}
+.aura-silver-unified .location-head{gap:10px!important;min-width:0!important}
+.aura-silver-unified .location-head > div:first-child{min-width:0}
+.aura-silver-unified .location-card small{color:#b8b9bf!important;font:500 9px/1.5 'DM Sans',sans-serif!important;letter-spacing:.15em!important}
+.aura-silver-unified .location-card strong{color:#eae9ee!important;font:400 clamp(17px,4.8vw,23px)/1.3 'Italiana',serif!important;overflow-wrap:anywhere}
+.aura-silver-unified .map-toggle{
+  font:500 9px/1.2 'DM Sans',sans-serif!important;
+  letter-spacing:.1em!important;
+  color:#dedfe5!important;
+  padding:12px 8px!important;
+  border:1px solid rgba(222,223,228,.27)!important;
+  border-radius:1px!important;
+  background:rgba(216,216,224,.06)!important;
+  white-space:nowrap!important;
+}
+.aura-silver-unified .map-toggle:hover{background:rgba(216,216,224,.12)!important}
+.aura-silver-unified .map-disclosure{grid-column:1/-1}
+.aura-silver-unified .map-preview{border:1px solid rgba(222,223,228,.22)!important;border-radius:1px!important}
+.aura-silver-unified .map-external{color:#cfd0d5!important}
+.aura-silver-unified .section-copy{
+  color:#d3d3d9!important;
+  font:400 clamp(14px,3.7vw,16px)/1.8 'DM Sans',sans-serif!important;
+  max-width:390px!important;
+  text-align:center!important;
+  margin:0 auto!important;
+}
+.aura-silver-unified.rsvp .cta{
+  min-height:44px!important;
+  max-width:100%!important;
+  padding:14px 24px!important;
+  margin:25px auto 3px!important;
+  border:1px solid rgba(224,224,232,.45)!important;
+  border-radius:1px!important;
+  background:linear-gradient(130deg,rgba(213,215,223,.19),rgba(142,145,153,.09))!important;
+  color:#f1f0f3!important;
+  font:500 10px/1.3 'DM Sans',sans-serif!important;
+  letter-spacing:.14em!important;
+  text-decoration:none!important;
+  box-shadow:0 10px 24px rgba(0,0,0,.17)!important;
+}
+.aura-silver-unified.rsvp .cta:hover{background:rgba(220,221,228,.21)!important}
+@media(max-width:480px){
+  .content > .section.aura-silver-unified{padding:32px 24px 30px!important;margin-bottom:20px!important}
+  .content > .section.aura-silver-unified::before{inset:7px!important}
+  .aura-silver-unified > h2{font-size:30px!important}
+  .aura-silver-unified .aura-silver-symbol{margin-bottom:11px}
+  .aura-silver-unified .countdown .count-item span{font-size:8px!important}
+  .aura-silver-unified .location-card{padding:14px!important}
+  .aura-silver-unified .location-head{grid-template-columns:minmax(0,1fr) auto!important;gap:8px!important}
+  .aura-silver-unified .map-toggle{padding:10px 6px!important;font-size:8px!important;letter-spacing:.05em!important}
+}
+</style><link rel="preload" as="image" href="assets/bola-disco-inicio.jpg"></head><body class="theme-monochrome event-boda design-graduacion"><div class="invitation-background" aria-hidden="true"><img src="assets/fondo.png?v=mw5mn3wy" alt="" decoding="async"><div class="background-veil"></div></div><header class="hero cover-theme" data-order="classic" data-offset="0"><div class="hero-media"></div><video class="nahomi-intro-video" aria-hidden="true" autoplay muted playsinline webkit-playsinline preload="auto" poster="assets/bola-disco-inicio.jpg"><source src="assets/nahomi-intro.mp4" type="video/mp4"></video><div class="hero-overlay"></div><div class="hero-inner"></div><div class="scroll-note">Desliza para descubrir</div></header><main class="page"><div class="content"><section id="fecha" class="section center reveal date-section aura-silver-unified"><div class="aura-silver-top" aria-hidden="true"><i></i><span>✧</span><i></i></div><div class="aura-silver-symbol" aria-hidden="true"><svg viewBox="0 0 88 88" width="82" height="82" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="12" y="17" width="64" height="59" rx="3" stroke="currentColor" stroke-width="1.3"/><path d="M12 33h64M29 11v13M59 11v13M27 49l10 10 24-24" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/></svg></div><div class="section-label">Save the date</div><h2 data-edit="countdownLabel">Falta para mi evento</h2><div class="aura-silver-divider" aria-hidden="true"><i></i><span>✦</span><i></i></div><div class="date-card date-couture"><div class="date-weekday">SÁBADO</div><div class="date-main"><span class="date-month">NOVIEMBRE</span><strong class="date-day">28</strong><span class="date-year">2026</span></div><div class="date-time">07:00 P.M.</div></div><div class="countdown countdown-editorial" data-date="2026-11-28T19:00"><div class="count-item"><b data-d>00</b><span>Días</span></div><div class="count-item"><b data-h>00</b><span>Horas</span></div><div class="count-item"><b data-m>00</b><span>Min</span></div><div class="count-item"><b data-s>00</b><span>Seg</span></div></div></section><section id="ubicacion" class="section reveal aura-silver-unified"><div class="aura-silver-top" aria-hidden="true"><i></i><span>✧</span><i></i></div><div class="aura-silver-symbol" aria-hidden="true"><svg viewBox="0 0 88 88" width="82" height="82" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M44 78S18 51 18 34a26 26 0 0 1 52 0C70 51 44 78 44 78Z" stroke="currentColor" stroke-width="1.45"/><circle cx="44" cy="34" r="9" stroke="currentColor" stroke-width="1.45"/><path d="M27 11l-2-3M61 11l2-3" stroke="currentColor" stroke-width=".9" stroke-linecap="round"/></svg></div><div class="section-label">Dónde será</div><h2 data-edit="locationsHeadingSize">Nos vemos aquí.</h2><div class="aura-silver-divider" aria-hidden="true"><i></i><span>✦</span><i></i></div><div class="locations"><div class="location-card map-mode-toggle"><div class="location-head"><div><small data-edit="receptionText">Recepción</small><strong data-edit="receptionText">Historico Premium Club 7:00pm</strong></div><button class="map-toggle" type="button" aria-expanded="false" aria-controls="map-reception"><span>Ver mapa</span><span class="map-toggle-icon">＋</span></button><div class="map-disclosure" id="map-reception"><div class="map-disclosure-inner"><div class="map-preview"><iframe data-src="https://www.google.com/maps?q=19.4196262%2C-102.0613708&amp;hl=es&amp;t=m&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen title="Mapa de Historico Premium Club 7:00pm"></iframe></div><a class="map-external" href="https://maps.app.goo.gl/w8dHvmhph3uNJdvz9" target="_blank" rel="noopener">Abrir en Google Maps ↗</a></div></div></div></div></div></section><section id="confirmar" class="section center rsvp reveal aura-silver-unified"><div class="aura-silver-top" aria-hidden="true"><i></i><span>✧</span><i></i></div><div class="aura-silver-symbol" aria-hidden="true"><svg viewBox="0 0 88 88" width="82" height="82" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="14" y="19" width="60" height="51" rx="3" stroke="currentColor" stroke-width="1.35"/><path d="m15 22 29 23 29-23M16 68l20-19M72 68 52 49" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/><path d="m36 45 6 6 13-14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div class="section-label">Confirmación de asistencia</div><h2>¿Nos acompañas?</h2><div class="aura-silver-divider" aria-hidden="true"><i></i><span>✦</span><i></i></div><p class="section-copy">Tu confirmación nos ayuda a preparar cada detalle.</p><a class="cta" target="_blank" href="https://wa.me/524523378563?text=Hola%2C%20quiero%20confirmar%20mi%20asistencia.">Confirmar por WhatsApp →</a></section><section id="cierre" class="section reveal aura-envelope-card" aria-labelledby="aura-envelope-title"><div class="aura-envelope-frame"><div class="aura-envelope-top"><span class="aura-envelope-hairline"></span><svg class="aura-envelope-spark" aria-hidden="true" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 1.5c.6 4.4 2.1 6.9 7.5 7.5-5.4.6-6.9 3.1-7.5 7.5C8.4 12.1 6.9 9.6 1.5 9 6.9 8.4 8.4 5.9 9 1.5Z" stroke="currentColor" stroke-width=".8"/></svg><span class="aura-envelope-hairline"></span></div><div class="aura-envelope-seal" aria-hidden="true"><svg viewBox="0 0 88 72" width="88" height="72" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 15.5h52a6 6 0 0 1 6 6v33a6 6 0 0 1-6 6H18a6 6 0 0 1-6-6v-33a6 6 0 0 1 6-6Z" stroke="currentColor" stroke-width="1.35"/><path d="m13 20 31 24 31-24M13 56l23-18M75 56 52 38" stroke="currentColor" stroke-width="1.15" stroke-linejoin="round"/><path d="M44 6v4M37 9l-2.5-2.5M51 9l2.5-2.5" stroke="currentColor" stroke-width=".9" stroke-linecap="round"/></svg></div><div class="section-label center aura-envelope-kicker">Un detalle especial</div><h2 id="aura-envelope-title" class="aura-envelope-title">Lluvia de sobres</h2><div class="aura-envelope-ornament" aria-hidden="true"><i></i><span>✦</span><i></i></div><p class="final-message aura-envelope-message" data-edit="mainMessage">Tu presencia es mi mejor regalo. Si deseas obsequiarme un detalle, agradeceré tu lluvia de sobres en este día tan especial.</p><div class="aura-envelope-footer" aria-hidden="true">✧ &nbsp; ✧ &nbsp; ✧</div></div></section><footer class="aura-brand-credit" data-aura-brand-credit="default-v1" aria-label="Créditos de diseño"><a href="https://auradigitaljal.com/" target="_blank" rel="noopener noreferrer" aria-label="Creado por Aura Digital. Conoce nuestras invitaciones"><span class="aura-brand-credit-kicker">Creado por</span><strong>AURA DIGITAL</strong><span class="aura-brand-credit-link">Conoce nuestras invitaciones</span></a></footer></div></main><script>(function invitationRuntime(){
  const ready=()=>{
   const reduced=window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
   const hero=document.querySelector('.hero'),heroInner=document.querySelector('.hero-inner');
