@@ -404,14 +404,16 @@ body:has(.nahomi-intro-stage:not(.is-finished)){overflow:hidden!important;oversc
   text-transform:uppercase;white-space:nowrap;
   pointer-events:none;
 }
-/* Muestra Nahomi: mensaje elegante superpuesto SOLO a la pantalla previa.
-   Se oculta al tocar, antes de reproducir el video; no altera la portada ni los assets. */
+
+/* Muestra Nahomi · composición editorial con dos zonas independientes:
+   frase arriba, bola disco libre al centro, botón abajo. */
 .nahomi-intro-stage .nahomi-intro-invite{
   position:absolute;z-index:3;left:50%;
-  bottom:calc(126px + env(safe-area-inset-bottom,0px));
+  top:clamp(90px,15dvh,156px);
+  bottom:auto;
   transform:translateX(-50%);
   display:flex;flex-direction:column;align-items:center;
-  width:min(88vw,490px);margin:0;padding:0 8px;
+  width:min(84vw,460px);margin:0;padding:0 8px;
   pointer-events:none;
   color:#f5f3f6;text-align:center;
   opacity:1;transition:opacity .16s ease,transform .16s ease;
@@ -419,37 +421,45 @@ body:has(.nahomi-intro-stage:not(.is-finished)){overflow:hidden!important;oversc
 }
 .nahomi-intro-stage .nahomi-intro-invite-lead{
   display:block;max-width:100%;
-  font:400 clamp(21px,4.6vw,30px)/1.14 'Italiana',serif;
+  font:400 clamp(17px,3.8vw,25px)/1.2 'Italiana',serif;
   letter-spacing:.055em;
   text-wrap:balance;
-  text-shadow:0 2px 14px #000,0 0 28px rgba(0,0,0,.8);
+  text-shadow:0 2px 14px #000,0 0 25px rgba(0,0,0,.76);
 }
 .nahomi-intro-stage .nahomi-intro-invite-xv{
-  display:block;margin-top:3px;
-  font:400 clamp(56px,12vw,78px)/1 'Great Vibes',cursive;
+  display:block;margin-top:7px;
+  font:400 clamp(49px,9.5vw,69px)/1.12 'Great Vibes',cursive;
   letter-spacing:0;
   color:#f5f6fa;
-  text-shadow:0 3px 16px rgba(0,0,0,.96),0 0 21px rgba(227,233,247,.28);
+  text-shadow:0 3px 16px rgba(0,0,0,.92),0 0 21px rgba(227,233,247,.24);
 }
 .nahomi-intro-stage .nahomi-intro-invite::after{
   content:"";display:block;
-  width:clamp(48px,14vw,80px);height:1px;margin-top:5px;
-  background:linear-gradient(90deg,transparent,rgba(237,239,248,.8),transparent);
+  width:clamp(44px,11vw,72px);height:1px;margin-top:7px;
+  background:linear-gradient(90deg,transparent,rgba(237,239,248,.7),transparent);
+}
+.nahomi-intro-stage .nahomi-start-pill{
+  bottom:calc(24px + env(safe-area-inset-bottom,0px));
 }
 .nahomi-intro-stage.is-playing .nahomi-intro-invite{
-  opacity:0;transform:translate(-50%,9px);
+  opacity:0;transform:translate(-50%,-8px);
 }
 @media(max-width:430px){
   .nahomi-intro-stage .nahomi-intro-invite{
-    bottom:calc(114px + env(safe-area-inset-bottom,0px));
+    top:clamp(93px,16dvh,140px);
+    width:min(88vw,380px);
+  }
+  .nahomi-intro-stage .nahomi-start-pill{
+    bottom:calc(19px + env(safe-area-inset-bottom,0px));
   }
 }
 @media(max-height:650px){
-  .nahomi-intro-stage .nahomi-intro-invite{
-    bottom:calc(99px + env(safe-area-inset-bottom,0px));
+  .nahomi-intro-stage .nahomi-intro-invite{top:calc(55px + env(safe-area-inset-top,0px))}
+  .nahomi-intro-stage .nahomi-intro-invite-lead{font-size:18px}
+  .nahomi-intro-stage .nahomi-intro-invite-xv{font-size:49px;margin-top:4px}
+  .nahomi-intro-stage .nahomi-start-pill{
+    bottom:calc(15px + env(safe-area-inset-bottom,0px));
   }
-  .nahomi-intro-stage .nahomi-intro-invite-lead{font-size:20px}
-  .nahomi-intro-stage .nahomi-intro-invite-xv{font-size:52px}
 }
 @media(prefers-reduced-motion:reduce){
   .nahomi-intro-stage .nahomi-intro-invite{transition:none!important}
